@@ -1,0 +1,6 @@
+1.XAMPP
+2.multi_login DB생성
+(phpMyadmin이용)
+3.users table 생성
+(id, address 등등)
+4.php파일, css파일 이용
