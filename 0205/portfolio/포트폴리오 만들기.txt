@@ -1,0 +1,266 @@
+﻿1. xampp 다운로드 및 설치
+   XAMPP Control Panel 에서 Apache와 MySQL Start
+	Apaceh가 서비스 되지 않을 때는 
+		C:\xampp\apache\conf\httpd.conf의 포트 번호 변경
+		Control Panel의 Config에서 아파치 포트 넘버 변경
+   XAMPP Control Panel - Shell
+	#mysql -uroot mysql
+	>set password=password('1234');
+	>exit
+	#exit
+
+   C:\xampp\phpMyAdmin\config.inc.php 파일 오픈
+	$cfg['Servers'][$i]['password'] = '1234'; 변경 후 저장 및 닫기
+
+
+2. 주소창에 "localhost" 입력 - phpMyAdmin 클릭 - 데이터베이스 - "portfolio" - 만들기
+
+3. C:\xampp\htdocs\ 폴더에 wordpress 다운로드
+   (https://ko.wordpress.org/download/)
+
+4. C:\xampp\htdocs\ 폴더에 압축 풀기 - wordpress 폴더 이름을 portfolio로 변경
+   (C:\xampp\htdocs\portfolio)
+
+5. 주소창에 "localhost/portfolio" 입력
+
+6. Let's go! 클릭
+
+7. 데이터베이스 이름 : portfolio
+   사용자 : root
+   암호 : 1234
+
+   전송 클릭
+
+8. 설치 실행하기 클릭
+
+9. 사이트 제목 : 홍길동의 포트폴리오
+   사용자명 : Hong GilDong
+   암호 : 1234
+   비밀번호 확인 : 취약한 암호 사용 확인 - 체크
+   이메일 주소 : hong@gil.dong
+   검색 엔진 접근 여부 : 검색 엔진이 이 사이트 검색 차단하기 - 체크
+
+   워드프레스 설치하기 클릭
+
+10. 로그인 클릭
+
+11. 사용자명 또는 이메일 주소 : Hong GilDong
+    암호 : 1234
+
+    로그인 클릭
+
+
+화면 좌측 상단의 홍길동의 포트폴리오 클릭 클릭
+====================================================================
+
+1. 테마 디자인 - 테마 - 새 테마 추가하기 - "Orfeo" 검색 
+
+2. Welcome to Orfeo
+	설치 클릭
+	활성화 클릭
+
+3. 알림판
+	Import Demo Content 클릭
+
+4. Hestia Original 
+	가져오기 클릭
+	웹 사이트 보기 클릭
+
+5. 알림판
+	플러그인 - 새로 추가 클릭
+		키워드 : Elementor 입력
+
+6. Elementor Page Builder 
+	지금 설치 클릭
+	활성화 클릭
+
+7. 알림판 
+	페이지 클릭 - 새 페이지 추가 클릭
+		제목 추가 : Home
+		페이지 속성
+		(오른쪽 중간)
+			템플릿 : Page build with full width
+
+		공개 클릭 클릭(한 번 더)
+		(오른쪽 상단)
+	설정
+		태그라인 : Programmer Hong GilDong
+
+		변경 사항 저장 클릭
+
+	읽기	
+		홈페이지 표시 
+			홈페이지 : Home 지정
+
+		변경 사항 저장 클릭
+
+=============================================================
+
+중앙 상단에 있는 + 새로 추가 클릭 -  Edit with Elementor - Yes 클릭
+
+Drag widget here 위에 있는 + 클릭
+
+Layout 
+	Content Width : Full Width 지정
+	Height : Fit to Screen 지정
+
+Style
+	Background Type : Classic 클릭
+	Image 아래에 있는 네모난 박스의 + 클릭
+		Insert Media
+			파일 업로드 탭 
+				파일 선택
+				(구글에서 이미지를 미리 다운 받으세요!)
+			미디어 라이브러리
+				그림 선택 - Insert Media 클릭
+	Size : Cover 지정
+
+Basic 
+	Spacer 화면 가운데로 드래그 앤 드롭
+	
+Edit Heading 오른쪽 아이콘(아홉 사각형) 클릭
+	Basic
+		Heading - Spacer로 드래그 앤 드롭
+		
+			Content  
+				Title : Programmer
+			Style
+				TextColor : white
+				Typography 
+					Family : Arial
+					Size : 70
+					Weight : 600
+			Advanced
+				Motion Effects
+					Entrance Animation : Fade In
+					Animation Delay(ms) : 700
+
+		Divider : 화면 중앙으로 드래그 앤 드롭
+			Content, Style, Advanced 지정
+
+		Heading : 화면 중앙으로 드래그 앤 드롭
+			Content  
+				Title : Hong GilDong
+
+			Content, Style, Advanced 지정
+			
+------------------------------------------------------------------------
+Add Section
+
+BASIC - Divider 추가
+BASIC - Heading 추가
+	Title : About
+
+BASIC - Inner Section 추가
+	왼쪽 Section에서 + 클릭 - Image 추가
+	오른쪽 Section에 
+		BASIC - Divider 추가
+		GENERAL - Tabs 추가
+		BASIC - Text Editor 추가
+
+------------------------------------------------------------------------
+Add Section
+
+BASIC - Divider 추가
+BASIC - Heading 추가
+	Title : SKILL
+
+BASIC - Inner Section 추가
+	왼쪽 Section에  GENERAL - Progress Bar 추가 - 마우스 우측 : Duplicate(필요한 만큼)	      	
+	오른쪽 Section에 
+		GENERAL - Tabs 추가
+
+		
+
+
+...
+
+
+
+Background overlay를 이용하여 흰 글자가 잘 보이도록 함
+
+
+===========================================================================
+알림판
+
+테마 디자인 
+	메뉴
+		메뉴 구조
+			메뉴 이름 : main_menu - 메뉴 저장 클릭
+			메뉴 설정 : 주 메뉴 - 메뉴 저장 클릭
+		메뉴 아이템 추가
+			사용지 정의 링크
+				URL : #About
+				링크 텍스트 : About
+				
+				메뉴에 추가 클릭
+
+				URL : #SKILL
+				링크 텍스트 : SKILL
+				
+				메뉴에 추가 클릭
+
+				...
+
+				메뉴 저장			
+
+
+Add section
+	Menu Anchor 추가
+	
+	이름 지정
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+				
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
